@@ -1,0 +1,33 @@
+/* Upload Zone */
+.upload-zone {
+  border: 2px dashed var(--color-border);
+  border-radius: var(--radius-2xl);
+  padding: var(--space-12);
+  text-align: center;
+  transition: all var(--transition-base);
+  cursor: pointer;
+  background-color: var(--color-surface);
+}
+
+.upload-zone.disabled {
+  border-color: var(--color-border-subtle);
+  background-color: var(--color-background);
+  cursor: not-allowed;
+}
+
+.upload-zone.dragging {
+  border-color: var(--color-accent-primary);
+  background-color: var(--color-surface-elevated);
+  transform: scale(1.02);
+}
+
+.upload-zone:hover {
+  border-color: var(--color-accent-primary);
+  background-color: var(--color-surface-elevated);
+}
+
+.upload-zone.drag-over {
+  border-color: var(--color-accent-primary);
+  background-color: var(--color-surface-elevated);
+  transform: scale(1.02);
+}
