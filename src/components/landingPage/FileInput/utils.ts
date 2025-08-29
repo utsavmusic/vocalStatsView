@@ -6,7 +6,7 @@ export const processFile = (file: File, callback?: (file: File) => void) => {
   }
   
   // Check file size (e.g., 10MB limit)
-  if (file.size > 10 * 1024 * 1024) {
+  if (file.size > 20 * 1024 * 1024) {
     alert('File too large');
     return;
   }
